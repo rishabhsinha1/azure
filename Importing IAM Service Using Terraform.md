@@ -43,6 +43,81 @@ terraform import azuread_user.testuser <Object ID>
 
 terraform state list
 
+![rs (37)](https://github.com/user-attachments/assets/5c7c3830-daac-4e9a-ba99-0e1cfc16899d)
+
+#### Now we have to check the configuration we imported, for that we have to run the command –
+
+terraform state show azuread_user.testuser
+
+![rs (38)](https://github.com/user-attachments/assets/9b747b99-5689-4d6b-88e0-31f55a168e15)
+
+## Creating a new user using Imported Template
+
+#### For creating a new user using that imported template, we have to create a provider file,
+
+#### Enter these details in “provider.tf” file –
+
+provider "azuread" {
+  tenant_id = var.tenant_id
+}
+
+resource "azuread_user" "testuser" {
+    account_enabled                = true
+    business_phones                = []
+    disable_password_expiration    = false
+    disable_strong_password        = false
+    display_name                   = "testuser_template"
+    mail_nickname                  = "testuser"
+    other_mails                    = []
+    show_in_address_list           = false
+    user_principal_name            = "testuser_template@******.onmicrosoft.com"
+    password                       = "AzureVM@!2024"
+}
+
+#### Also we have to create a variable file which can be referred for the variables in provider file,
+
+#### Enter these details in “vars.tf” file –
+
+variable "tenant_id" {
+  description = "The tenant ID for the Azure provider"
+  type        = string
+  default     = "d7721f7d-2452-41bf-8fae-e29441ea930c"
+}
+
+#### After that, now we have to run “terraform init” command to initialize the working directory and to download the necessary provider plugins.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
