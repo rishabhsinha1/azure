@@ -86,6 +86,29 @@ variable "tenant_id" {
 
 #### After that, now we have to run “terraform init” command to initialize the working directory and to download the necessary provider plugins.
 
+![Our latest women's fashion collection is now available on our official store  (3)](https://github.com/user-attachments/assets/606cd393-a8e9-405d-87d0-7a3735d11c57)
+
+#### After that, now we have to run “terraform plan” command to create an execution plan,
+
+![azure](https://github.com/user-attachments/assets/12d21b84-a73c-4254-bcdb-523f5ea0481d)
+
+![azure (1)](https://github.com/user-attachments/assets/a49b4326-1193-43aa-a0c3-ea9570e0eda3)
+
+#### After that, now we have to run “terraform apply” command to apply the changes,
+
+![image](https://github.com/user-attachments/assets/b372c75a-2f86-4e00-ad7e-45be21345320)
+
+![image](https://github.com/user-attachments/assets/31a890a6-65c5-4f07-96dd-f71230c3f2e7)
+
+#### After that now the user will be created, we can verify it by checking into the Azure Console, 
+
+#### Here we can see the new user “testuser_template” is showing.
+
+![image](https://github.com/user-attachments/assets/6f4f2e72-e56b-4c39-a8dd-0dbc898ad130)
+
+#### Here “testuser” user is which we used to import the configurations and “testuser_template” user is the one we created using that template.
+
+
 
 
 
