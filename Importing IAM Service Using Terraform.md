@@ -9,12 +9,18 @@
 #### Enter these details in “provider.tf” file –
 
 provider "azuread" {
+  
   tenant_id = var.tenant_id
+  
 }	
 
+
 resource "azuread_user" "testuser" {
+
   user_principal_name = "testuser@yourdomain.com"
+  
   display_name        = "Test User"
+  
 }
 
 #### Also we have to create a variable file which can be referred for the variables in provider file,
