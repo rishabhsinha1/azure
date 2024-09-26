@@ -1,4 +1,4 @@
-#### Launching Cloud Shell
+# Launching Cloud Shell
 
 For launching a cloud shell
 
